@@ -109,7 +109,7 @@
 
 <script>
     // ========== ✅ YOUR CORRECT WEB APP URL (updated) ==========
-    const API_URL = "https://script.google.com/macros/s/AKfycbz3afPALMJgB010JhjiCv_gdAlKl_aJ7W6MZby-2ulBq45R_kpk4530XVcZCT0Vy7o2/exec";
+    const API_URL = "https://script.google.com/macros/s/AKfycbzOfaZgiS57HaWtVAg7FRTmSXCuIh0GwDTYIjvNWdJd_ygJE5NGtWinpw7aXDFquTno/exec";
     // ============================================================
 
     let currentProduct = null;
@@ -233,7 +233,6 @@
                 await callApi('processTransaction', { worker, barcode, type: transactionType, qty, notes });
                 showToast(`${transactionType} ${qty} → stock updated`);
             }
-            // Reset form
             document.getElementById('barcodeInput').value = '';
             document.getElementById('quantityInput').value = '1';
             document.getElementById('notesInput').value = '';
